@@ -19,7 +19,7 @@ body {
   margin: 0; 
   background-size: cover;}
 
-input, textarea, select, button {
+input, textarea, select, button, a {
   font-family: "Muli-Regular";
   color: #f1f1f1;
   font-size: 13px; }
@@ -101,13 +101,6 @@ form {
   font-family: "Muli-Bold";
   background: none; }
   
-/* select {
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  cursor: pointer;
-  padding-left: 20px; }
-  select option[value=""][disabled] {
-    display: none; } */
 .padding-10{
   padding: 10px;
 }
@@ -124,7 +117,7 @@ form {
   justify-content: left;
 }
 
-button {
+a {
   border: none;
   width: 152px;
   height: 40px;
@@ -134,6 +127,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-decoration: none;
   padding: 0;
   background: #ae3c33;
   font-size: 13px;
@@ -148,9 +142,9 @@ button {
   position: relative;
   -webkit-transition-property: color;
   transition-property: color;
-  -webkit-transition-duration: 0.5s;
-  transition-duration: 0.5s; }
-  button:before {
+  -webkit-transition-duration: 3s;
+  transition-duration: 3s; }
+  a:before {
     content: "";
     position: absolute;
     z-index: -1;
@@ -158,18 +152,18 @@ button {
     left: 0;
     right: 0;
     bottom: 0;
-    background: #f11a09;
+    background: #33ae57 ;
     -webkit-transform: scaleX(0);
     transform: scaleX(0);
     -webkit-transform-origin: 0 50%;
     transform-origin: 0 50%;
     -webkit-transition-property: transform;
     transition-property: transform;
-    -webkit-transition-duration: 0.5s;
-    transition-duration: 0.5s;
+    -webkit-transition-duration: 3s;
+    transition-duration: 3s;
     -webkit-transition-timing-function: ease-out;
     transition-timing-function: ease-out; }
-  button:hover:before {
+  a:hover:before {
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
     -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
