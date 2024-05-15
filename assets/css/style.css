@@ -46,10 +46,10 @@ a:hover {
   align-items: center; }
 
 .inner {
-  min-width: 600px;
+  min-width: 500px;
   margin: auto;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
   .inner h3 {
     text-transform: uppercase;
